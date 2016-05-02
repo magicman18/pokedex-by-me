@@ -19,18 +19,15 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     var musicPlayer: AVAudioPlayer!
     var inSearchMode = false
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         collection.delegate = self
         collection.dataSource = self
         searchBar.delegate = self
         searchBar.returnKeyType = UIReturnKeyType.Done
-        
         initAudio()
         parsePokemonCsv()
-        
-    }
+        }
     
     func initAudio() {
         
@@ -54,7 +51,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             let csv = try CSV(contentsOfURL: path)
             let rows = csv.rows
             
-            
             for row in rows {
                 let pokeId = Int(row["id"]!)!
                 let name = row["identifier"]!
@@ -65,7 +61,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         } catch let err as NSError {
             print(err.debugDescription)
         }
-        
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {

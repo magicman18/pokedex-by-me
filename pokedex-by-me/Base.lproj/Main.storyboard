@@ -412,10 +412,11 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="EvoLbl" destination="Whx-Kr-S6a" id="wue-hX-Y6Z"/>
+                        <outlet property="baseAttack" destination="v3w-Yz-bHM" id="s29-Rs-jBa"/>
                         <outlet property="currentEvoImg" destination="ZZU-9y-hiH" id="OgP-ZY-RTW"/>
                         <outlet property="defenseLbl" destination="Gv8-Fw-QKo" id="4ja-PA-uJa"/>
                         <outlet property="descriptionLbl" destination="qSh-bb-lQm" id="ICZ-Cb-OC2"/>
+                        <outlet property="evoLbl" destination="Whx-Kr-S6a" id="Rqf-Zh-YwV"/>
                         <outlet property="heightLbl" destination="Sfe-ae-z02" id="430-Ag-cVs"/>
                         <outlet property="mainImg" destination="QlP-k7-xGz" id="Gay-fg-UvD"/>
                         <outlet property="nameLbl" destination="KvV-j4-MPf" id="1UY-x7-QIi"/>
