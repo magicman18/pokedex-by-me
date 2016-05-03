@@ -164,7 +164,7 @@ class Pokemon {
                     if let url = descArr[0]["resource_uri"] {
                         let nsurl = NSURL(string: "\(URL_BASE)\(url)")!
                         
-                        Alamofire.request(.GET, nsurl).responseJSON { respnse in
+                        Alamofire.request(.GET, nsurl).responseJSON { response in
                             
                             let desResult = response.result
                             if let descDict = desResult.value as? Dictionary<String, AnyObject> {
