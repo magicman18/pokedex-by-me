@@ -190,6 +190,7 @@
 				TargetAttributes = {
 					98A046FE1CC314300041859D = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = M75W36VL8P;
 					};
 				};
 			};
@@ -445,10 +446,13 @@
 			baseConfigurationReference = 8F4BD16858400B14E5A3A22E /* Pods-pokedex-by-me.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "pokedex-by-me/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.magicbylarsen.pokedex-by-me";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -457,10 +461,13 @@
 			baseConfigurationReference = 7C1D6B821826E357ABF25354 /* Pods-pokedex-by-me.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "pokedex-by-me/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.magicbylarsen.pokedex-by-me";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
